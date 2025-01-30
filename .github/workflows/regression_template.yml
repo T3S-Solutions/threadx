@@ -144,7 +144,7 @@ jobs:
       uses: actions/upload-artifact@v4
       if: (inputs.skip_deploy && !inputs.skip_coverage)
       with:
-        name: coverage_report 
+        name: coverage_report
         path: ${{ inputs.cmake_path }}/coverage_report
         retention-days: 1
           
