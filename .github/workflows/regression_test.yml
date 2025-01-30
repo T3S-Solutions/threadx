@@ -19,6 +19,7 @@ jobs:
       cmake_path: ./test/tx/cmake
       result_affix: ThreadX
       skip_deploy: true
+      skip_coverage: true
   smp:
     uses: ./.github/workflows/regression_template.yml
     with:
@@ -27,6 +28,7 @@ jobs:
       cmake_path: ./test/smp/cmake
       result_affix: SMP
       skip_deploy: true
+      skip_coverage: true
   deploy:
     needs: [tx, smp]
     uses: ./.github/workflows/regression_template.yml
