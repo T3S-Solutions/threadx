@@ -172,7 +172,7 @@ jobs:
         name: coverage_report
 
     - name: Upload Code Coverage Pages
-      uses: actions/upload-pages-artifact@v2.0.0
+      uses: actions/upload-pages-artifact@v3.0.1
       if: ${{ inputs.skip_test }}
       with:
         path: .
