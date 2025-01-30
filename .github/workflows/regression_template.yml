@@ -149,7 +149,7 @@ jobs:
         retention-days: 1
           
     - name: Upload Code Coverage Pages
-      uses: actions/upload-pages-artifact@v2.0.0
+      uses: actions/upload-pages-artifact@v3.0.1
       if: (!inputs.skip_deploy && !inputs.skip_coverage)
       with:
         path: ${{ inputs.cmake_path }}/coverage_report/${{ inputs.coverage_name }}
