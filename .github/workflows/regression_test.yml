@@ -26,6 +26,6 @@ jobs:
   deploy:
     needs: [tx, smp]
     uses: ./.github/workflows/regression_template.yml
-   with:
+    with:
       skip_test: true
       deploy_list: "ThreadX SMP"
